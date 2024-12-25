@@ -79,7 +79,7 @@
  display: flex;
  flex-wrap: wrap;
  padding: 100px 120px;
- row-gap: 20px;
+ row-gap: 100px;
  column-gap: 20px;
 }
 
@@ -130,12 +130,37 @@
 
 /* button */
 .filter {
-  display: flex;              /* Enables flexbox */
-  justify-content: center;   /* Centers horizontally */
-  align-items: center;       /* Centers vertically if needed */
-  margin: 40px 0px;
+  display: flex;
+  gap: 45px;
+  justify-content: flex-end;
+  padding: 87px 131px 20px 126px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
 /* Button Styling */
 .fltr-button {
   padding: 10px 20px;               /* Adds padding inside the button */
