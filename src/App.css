@@ -187,3 +187,49 @@
   outline: none;                    /* Removes default focus outline */
   box-shadow: 0 0 8px rgba(0, 128, 0, 0.7); /* Adds glow effect */
 }
+
+
+/* Error page css */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.error-code {
+  font-size: 120px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.error-message {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.error-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.error-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+  background-color: #2980b9;
+}
