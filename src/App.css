@@ -233,3 +233,118 @@
 .error-button:hover {
   background-color: #2980b9;
 }
+a {
+  text-decoration: none;
+  color: inherit; /* Optional: This makes the link inherit the text color */
+}
+
+
+.add-item-button{
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+}
+
+
+/* cart css */
+
+.cart-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-left: 120px;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-details {
+  padding: 15px;
+}
+
+.restaurant-name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.restaurant-rating,
+.restaurant-waiting {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.restaurant-menu h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.restaurant-menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.restaurant-menu li {
+  font-size: 14px;
+  color: #333;
+}
+
+.empty-cart-message {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+  color: black;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  
+  font-weight: bold;
+  padding: 10px;
+  border: 2px dashed #ff7e5f;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.empty-cart-message:hover {
+  transform: scale(1.05);
+}

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import { restaurantData } from '../utils/restaurantData';
+import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
+import OfflineStatus from './OfflineStatus';
 
 
 
@@ -27,6 +30,7 @@ function Body() {
   //   const json = await data.json();
   //   console.log(json);
   // }
+  
   return (
     <div className='body'>
       <div className='filter'>
@@ -38,7 +42,7 @@ function Body() {
       </div>
       <div className='res-container'>
         {filterResData.map((restaurant, index) => (
-          <Card
+          <Link to={"/restaurants/" + restaurant.id}><Card
             key={index}
             image={restaurant.image}
             name={restaurant.name}
@@ -46,6 +50,7 @@ function Body() {
             cusines={restaurant.cuisines.join(", ")} // Joining array into string
             waitingTime={restaurant.waitingTime}
           />
+          </Link>
         ))}
       </div>
     </div>
